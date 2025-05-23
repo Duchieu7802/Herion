@@ -35,6 +35,29 @@ const menuItems = [
 		title: "elements",
 	},
 ];
+const bannerItems = [
+	{
+		image: "./singer.jpg",
+		title: "Record Label",
+		name: "A home for creative",
+		subname: "Music artists",
+		content: `Vestibulum ullamcorper mauris at ligula. Donec mi odio,faucibus at, scelerisque<br></br> quis, convallis in, nisi.Vestibulum suscipit nulla quis orci.`,
+	},
+	{
+		image: "./dj.jpg",
+		title: "Music Events",
+		name: "Festival and Events",
+		subname: "Organizer",
+		content: `Vestibulum ullamcorper mauris at ligula. Donec mi odio,faucibus at, scelerisque<br></br> quis, convallis in, nisi.Vestibulum suscipit nulla quis orci.`,
+	},
+	{
+		image: "./guitar.jpg",
+		title: "Record Shop",
+		name: "Online music and",
+		subname: "merch store ",
+		content: `Vestibulum ullamcorper mauris at ligula. Donec mi odio,faucibus at, scelerisque<br></br> quis, convallis in, nisi.Vestibulum suscipit nulla quis orci.`,
+	},
+];
 function Header({ menuOpen, setMenuOpen }) {
 	const toggleMenu = () => setMenuOpen(!menuOpen);
 
@@ -42,7 +65,7 @@ function Header({ menuOpen, setMenuOpen }) {
 		<nav className="fixed top-0 left-0 text-white w-full z-50 px-6 lg:px-10">
 			<div className="flex flex-wrap justify-between items-center w-full bg-transparent pt-4">
 				<a href="#" className="flex items-center">
-					<span className="logo-container dark:text-white ">H</span>
+					<span className="logo-container dark:text-white w-10 h-14 ">H</span>
 				</a>
 				<div className="flex items-center lg:order-2 text-white">
 					<a
@@ -160,26 +183,33 @@ function App() {
 						modules={[Navigation, Pagination, Mousewheel, Keyboard]}
 						className="mySwiper"
 					>
-						<SwiperSlide>
-							<img src="./singer.jpg" alt="" />
-							<div className="text">
-								<p className="logo-container">Record Label</p>
-								<h2>A home for creative music artists</h2>
-								<span>
-									Vestibulum ullamcorper mauris at ligula. Donec mi odio,
-									faucibus at, scelerisque quis, convallis in, nisi. Vestibulum
-									suscipit nulla quis orci.{" "}
-								</span>
-							</div>
-						</SwiperSlide>
-						<SwiperSlide>
-							{" "}
-							<img src="./dj.jpg" alt="" />
-						</SwiperSlide>
-						<SwiperSlide>
-							{" "}
-							<img src="./guitar.jpg" alt="" />
-						</SwiperSlide>
+						{bannerItems.map((item) => (
+							<SwiperSlide key={item.title}>
+								<img src={item.image} alt="" />
+								<div className="text absolute flex flex-col items-start  top-[30%] left-[10%]">
+									<p className="logo-container block text-white font-medium text-8xl">
+										{item.title}
+									</p>
+									<h2 className="text-white font-semibold text-7xl uppercase leading-none tracking-widest break-words ">
+										{item.name}
+									</h2>
+									<h2 className="text-white font-semibold tracking-widest text-7xl uppercase leading-none break-words mb-10 ">
+										{item.subname}
+									</h2>
+									<span className="text-white text-left leading-6 break-word mb-10">
+										{item.content}
+									</span>
+									<button
+										type="button"
+										className="bg-(--color-red) text-whỉte uppercase font-normal text-base p-5"
+									>
+										<a href="#" className="text-white text-base font-normal ">
+											Learn More
+										</a>
+									</button>
+								</div>
+							</SwiperSlide>
+						))}
 					</Swiper>
 				</div>
 			</header>

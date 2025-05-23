@@ -3,10 +3,13 @@
 	font-family: "HarleyStyle";
 	src: url("./assets/fonts/harley-style-brush.otf") format("opentype");
 }
+@theme {
+	--color-red: #ee2750;
+}
 @layer base {
-	/* body {
-		@apply bg-gray-200;
-	} */
+	body {
+		@apply text-base;
+	}
 }
 
 @layer components {
@@ -14,8 +17,6 @@
 		font-family: "HarleyStyle", sans-serif;
 		font-weight: 900;
 		font-size: 40px;
-		width: 41px;
-		height: 55px;
 	}
 }
 .custom-hover {
