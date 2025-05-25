@@ -42,7 +42,7 @@ const Content = () => {
 		playTrack(idx);
 	};
 	return (
-		<div className=" flex flex-col items-center justify-center relative">
+		<div className=" flex flex-col items-center justify-center relative mb-20">
 			<img
 				src="https://preview-v2-wolfthemes.b-cdn.net/app/uploads/sites/31/2019/10/t-bg.png"
 				alt=""
@@ -78,11 +78,11 @@ const Content = () => {
 					onSelect={handleSelect}
 				/>
 			</div>
-			<div className="flex items-center gap-10 p-10 w-full">
+			<div className="flex items-center gap-10 p-10 mb-20 w-full">
 				<div>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
-						xmlns:xlink="http://www.w3.org/1999/xlink"
+						xmlnsXlink="http://www.w3.org/1999/xlink"
 						version="1.1"
 						id="Layer_1"
 						x="0px"
@@ -90,8 +90,8 @@ const Content = () => {
 						width="50px"
 						height="50px"
 						viewBox="0 0 64 64"
-						enable-background="new 0 0 64 64"
-						xml:space="preserve"
+						enableBackground="new 0 0 64 64"
+						xmlSpace="preserve"
 						className="mb-10"
 					>
 						<path
@@ -158,7 +158,7 @@ const Content = () => {
 				<div>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
-						xmlns:xlink="http://www.w3.org/1999/xlink"
+						xmlnsXlink="http://www.w3.org/1999/xlink"
 						version="1.1"
 						id="Layer_1"
 						x="0px"
@@ -166,8 +166,8 @@ const Content = () => {
 						width="50px"
 						height="50px"
 						viewBox="0 0 64 64"
-						enable-background="new 0 0 64 64"
-						xml:space="preserve"
+						enableBackground="new 0 0 64 64"
+						xmlSpace="preserve"
 						className="mb-10"
 					>
 						<path
@@ -238,7 +238,7 @@ const Content = () => {
 				<div>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
-						xmlns:xlink="http://www.w3.org/1999/xlink"
+						xmlnsXlink="http://www.w3.org/1999/xlink"
 						version="1.1"
 						id="Layer_1"
 						x="0px"
@@ -246,8 +246,8 @@ const Content = () => {
 						width="50px"
 						height="50px"
 						viewBox="0 0 64 64"
-						enable-background="new 0 0 64 64"
-						xml:space="preserve"
+						enableBackground="new 0 0 64 64"
+						xmlSpace="preserve"
 						className="mb-10"
 					>
 						<path
@@ -292,7 +292,7 @@ const Content = () => {
 				<div>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
-						xmlns:xlink="http://www.w3.org/1999/xlink"
+						xmlnsXlink="http://www.w3.org/1999/xlink"
 						version="1.1"
 						id="Layer_1"
 						x="0px"
@@ -300,8 +300,8 @@ const Content = () => {
 						width="50px"
 						height="50px"
 						viewBox="0 0 64 64"
-						enable-background="new 0 0 64 64"
-						xml:space="preserve"
+						enableBackground="new 0 0 64 64"
+						xmlSpace="preserve"
 						className="mb-10"
 					>
 						<g>
@@ -355,6 +355,109 @@ const Content = () => {
 						ligula laoreet iaculis. Suspendisse non nisl sit amet velit.
 					</p>
 				</div>
+			</div>
+			<div className="flex items-center ">
+				<a href="https://vimeo.com/94089835 " className="relative">
+					<img
+						src="https://preview-v2-wolfthemes.b-cdn.net/app/uploads/sites/31/2019/10/474050780_640-475x280.jpg"
+						alt=""
+						className="w-full h-full object-cover "
+					/>
+					<div
+						className="border border-gray-200 absolute text-white p-5
+    top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							strokeWidth={1.5}
+							stroke="currentColor"
+							className="w-6 h-6"
+						>
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
+							/>
+						</svg>
+					</div>
+				</a>
+				<a href="https://vimeo.com/12382884" className="relative">
+					<img
+						src="https://preview-v2-wolfthemes.b-cdn.net/app/uploads/sites/31/2019/10/69407962_640-475x280.jpg"
+						alt=""
+					/>
+					<div
+						className="border border-gray-200 absolute text-white p-5
+    top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							strokeWidth={1.5}
+							stroke="currentColor"
+							className="w-6 h-6"
+						>
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
+							/>
+						</svg>
+					</div>
+				</a>
+				<a href="https://vimeo.com/72521312" className="relative">
+					<img
+						src="https://preview-v2-wolfthemes.b-cdn.net/app/uploads/sites/31/2019/10/446404255_640-475x280.jpg"
+						alt=""
+					/>
+					<div
+						className="border border-gray-200 absolute text-white p-5
+    top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							strokeWidth={1.5}
+							stroke="currentColor"
+							className="w-6 h-6"
+						>
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
+							/>
+						</svg>
+					</div>
+				</a>
+				<a href="https://vimeo.com/20442260" className="relative">
+					<img
+						src="https://preview-v2-wolfthemes.b-cdn.net/app/uploads/sites/31/2019/10/130689285_640-475x280.jpg"
+						alt=""
+					/>
+					<div
+						className="border border-gray-200 absolute text-white p-5
+    top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							strokeWidth={1.5}
+							stroke="currentColor"
+							className="w-6 h-6"
+						>
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
+							/>
+						</svg>
+					</div>
+				</a>
 			</div>
 		</div>
 	);
