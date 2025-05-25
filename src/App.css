@@ -5,11 +5,8 @@
 }
 @theme {
 	--color-red: #ee2750;
-}
-@layer base {
-	body {
-		@apply text-base;
-	}
+	--color-gray2: #dfdfdf;
+	--font-body: "Montserrat", "san-serif";
 }
 
 @layer components {
@@ -62,4 +59,9 @@
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+@layer base {
+	body {
+		@apply text-base font-body;
+	}
 }

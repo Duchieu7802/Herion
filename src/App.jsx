@@ -41,21 +41,18 @@ const bannerItems = [
 		title: "Record Label",
 		name: "A home for creative",
 		subname: "Music artists",
-		content: `Vestibulum ullamcorper mauris at ligula. Donec mi odio,faucibus at, scelerisque<br></br> quis, convallis in, nisi.Vestibulum suscipit nulla quis orci.`,
 	},
 	{
 		image: "./dj.jpg",
 		title: "Music Events",
 		name: "Festival and Events",
 		subname: "Organizer",
-		content: `Vestibulum ullamcorper mauris at ligula. Donec mi odio,faucibus at, scelerisque<br></br> quis, convallis in, nisi.Vestibulum suscipit nulla quis orci.`,
 	},
 	{
 		image: "./guitar.jpg",
 		title: "Record Shop",
 		name: "Online music and",
 		subname: "merch store ",
-		content: `Vestibulum ullamcorper mauris at ligula. Donec mi odio,faucibus at, scelerisque<br></br> quis, convallis in, nisi.Vestibulum suscipit nulla quis orci.`,
 	},
 ];
 function Header({ menuOpen, setMenuOpen }) {
@@ -187,17 +184,19 @@ function App() {
 							<SwiperSlide key={item.title}>
 								<img src={item.image} alt="" />
 								<div className="text absolute flex flex-col items-start  top-[30%] left-[10%]">
-									<p className="logo-container block text-white font-medium text-8xl">
+									<p className="logo-container block text-white font-medium text-7xl">
 										{item.title}
 									</p>
-									<h2 className="text-white font-semibold text-7xl uppercase leading-none tracking-widest break-words ">
+									<h2 className="text-white font-semibold text-6xl uppercase leading-none  ">
 										{item.name}
 									</h2>
-									<h2 className="text-white font-semibold tracking-widest text-7xl uppercase leading-none break-words mb-10 ">
+									<h2 className="text-white font-semibold tracking-widest text-6xl uppercase  mb-10 ">
 										{item.subname}
 									</h2>
 									<span className="text-white text-left leading-6 break-word mb-10">
-										{item.content}
+										Vestibulum ullamcorper mauris at ligula. Donec mi
+										odio,faucibus at, scelerisque <br></br> quis, convallis in,
+										nisi.Vestibulum suscipit nulla quis orci.
 									</span>
 									<button
 										type="button"
@@ -213,6 +212,76 @@ function App() {
 					</Swiper>
 				</div>
 			</header>
+			<div className="artist p-20 block text-center">
+				<span className="logo-container block mb-2 text-(--color-gray2) text-7xl font-normal">
+					Newly Signed
+				</span>
+				<h2 className="font-normal uppercase">Artists</h2>
+				<div className="flex items-center p-10 w-full gap-10 mb-20">
+					<div className="relative w-[325px] h-[450px]">
+						<img
+							src="https://preview-v2-wolfthemes.b-cdn.net/app/uploads/sites/31/2018/02/george-coletrain-uiyse12Hu14-unsplash-640x800.jpg"
+							alt=""
+							className="w-full h-full object-cover"
+						/>
+						<a
+							href=""
+							className="absolute w-[80%] p-6 right-0 bottom-[-15px] flex flex-col items-start bg-white"
+						>
+							<p className="font-semibold">Barrage of Obscurity</p>
+							<span className="text-start">Electro</span>
+						</a>
+					</div>
+					<div className="relative w-[325px] h-[450px]">
+						<img
+							src="https://preview-v2-wolfthemes.b-cdn.net/app/uploads/sites/31/2018/02/tanner-boriack-hxnBkzz9iL4-unsplash-640x800.jpg"
+							alt=""
+							className="w-full h-full object-cover"
+						/>
+						<a
+							href=""
+							className="absolute w-[80%] p-6 right-0 bottom-[-15px] flex flex-col items-start bg-white"
+						>
+							<p className="font-semibold uppercase">Residue</p>
+							<span className="text-start">Rock</span>
+						</a>
+					</div>
+					<div className="relative w-[325px] h-[450px]">
+						<img
+							src="https://preview-v2-wolfthemes.b-cdn.net/app/uploads/sites/31/2018/02/alexander-krivitskiy-1-KWZCuxbF0-unsplash-scaled-640x800.jpg"
+							alt=""
+							className="w-full h-full object-cover"
+						/>
+						<a
+							href=""
+							className="absolute w-[80%] p-6 right-0 bottom-[-15px] flex flex-col items-start bg-white"
+						>
+							<p className="font-semibold uppercase">Thingamajig</p>
+							<span className="text-start">Hip-Hop</span>
+						</a>
+					</div>
+					<div className="relative w-[325px] h-[450px]">
+						<img
+							src="https://preview-v2-wolfthemes.b-cdn.net/app/uploads/sites/31/2018/02/matteo-vistocco-nxqG_z3rmjQ-unsplash-640x800.jpg"
+							alt=""
+							className="w-full h-full object-cover"
+						/>
+						<a
+							href=""
+							className="absolute w-[80%] p-6 right-0 bottom-[-15px] flex flex-col items-start bg-white"
+						>
+							<p className="font-semibold uppercase">Concord</p>
+							<span className="text-start">Electro/ Rock</span>
+						</a>
+					</div>
+				</div>
+				<a
+					href="#"
+					className="px-7 py-3 font-semibold  border border-black-200 uppercase text-xs"
+				>
+					View more artists
+				</a>
+			</div>
 		</>
 	);
 }
