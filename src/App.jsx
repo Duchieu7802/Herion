@@ -6,6 +6,7 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Content from "./components/layouts/Content";
 const menuItems = [
 	{
 		title: "Home",
@@ -282,6 +283,7 @@ function App() {
 					View more artists
 				</a>
 			</div>
+			<Content></Content>
 		</>
 	);
 }

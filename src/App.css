@@ -6,6 +6,9 @@
 @theme {
 	--color-red: #ee2750;
 	--color-gray2: #dfdfdf;
+	--color-gray3: #2d2d2d;
+	--color-black1: #252525;
+	--color-black2: #1f1f1f;
 	--font-body: "Montserrat", "san-serif";
 }
 
