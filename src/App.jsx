@@ -10,6 +10,7 @@ import Content from "./components/layouts/Content";
 import Catalog from "./components/layouts/Catalog";
 import Arrival from "./components/layouts/Arrival";
 import New from "./components/layouts/New";
+import Contact from "./components/layouts/Contact";
 const menuItems = [
 	{
 		title: "Home",
@@ -290,6 +291,7 @@ function App() {
 			<Catalog></Catalog>
 			<Arrival></Arrival>
 			<New></New>
+			<Contact></Contact>
 		</>
 	);
 }
