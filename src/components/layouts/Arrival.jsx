@@ -3,7 +3,7 @@ import { Counter } from "../Counter";
 
 const Arrival = () => {
 	return (
-		<div className="text-center mb-10">
+		<div className="text-center mb-20">
 			<span className="logo-container block mb-2 text-(--color-gray2) text-7xl font-normal">
 				New Arrivals
 			</span>
