@@ -8,6 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Content from "./components/layouts/Content";
 import Catalog from "./components/layouts/Catalog";
+import Arrival from "./components/layouts/Arrival";
 const menuItems = [
 	{
 		title: "Home",
@@ -286,6 +287,7 @@ function App() {
 			</div>
 			<Content></Content>
 			<Catalog></Catalog>
+			<Arrival></Arrival>
 		</>
 	);
 }

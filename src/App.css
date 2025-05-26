@@ -30,6 +30,9 @@
 			left top no-repeat;
 		background-size: cover;
 	}
+	.original-bg {
+		background: url(https://preview-v2-wolfthemes.b-cdn.net/app/uploads/sites/31/2019/10/pattern_paint_white.jpg);
+	}
 }
 .custom-hover {
 	position: relative;
